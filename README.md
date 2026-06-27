@@ -138,13 +138,15 @@ flowchart TB
 
 ### 🎓 Certifications
 
+<p><i>👆 Click any badge to view the certificate.</i></p>
+
 <p>
-  <img src="https://img.shields.io/badge/AWS%20Certified-DevOps%20Engineer%20Professional-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white" alt="AWS DevOps Pro" />
-  <img src="https://img.shields.io/badge/CNCF-Certified%20Kubernetes%20Administrator%20(CKA)-326CE5?style=flat-square&logo=kubernetes&logoColor=white" alt="CKA" />
-  <img src="https://img.shields.io/badge/AWS%20Certified-Solutions%20Architect%20Associate-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white" alt="AWS SAA" />
+  <a href="https://github.com/Muhammad-Imad/Muhammad-Imad/blob/main/certs/aws-devops-engineer-professional.pdf"><img src="https://img.shields.io/badge/AWS%20Certified-DevOps%20Engineer%20Professional-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white" alt="AWS DevOps Pro" /></a>
+  <a href="https://github.com/Muhammad-Imad/Muhammad-Imad/blob/main/certs/cka.jpg"><img src="https://img.shields.io/badge/CNCF-Certified%20Kubernetes%20Administrator%20(CKA)-326CE5?style=flat-square&logo=kubernetes&logoColor=white" alt="CKA" /></a>
+  <a href="https://github.com/Muhammad-Imad/Muhammad-Imad/blob/main/certs/aws-solutions-architect-associate.png"><img src="https://img.shields.io/badge/AWS%20Certified-Solutions%20Architect%20Associate-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white" alt="AWS SAA" /></a>
   <br/>
-  <img src="https://img.shields.io/badge/Microsoft-AZ--104%20Azure%20Administrator-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" alt="AZ-104" />
-  <img src="https://img.shields.io/badge/Microsoft-Azure%20Network%20Engineer-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" alt="Azure Network Engineer" />
+  <a href="https://github.com/Muhammad-Imad/Muhammad-Imad/blob/main/certs/az-104-administrator.jpg"><img src="https://img.shields.io/badge/Microsoft-AZ--104%20Azure%20Administrator-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" alt="AZ-104" /></a>
+  <a href="https://github.com/Muhammad-Imad/Muhammad-Imad/blob/main/certs/azure-network-engineer.jpg"><img src="https://img.shields.io/badge/Microsoft-Azure%20Network%20Engineer-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" alt="Azure Network Engineer" /></a>
 </p>
 
 ---
