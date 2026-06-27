@@ -4,7 +4,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Experience-6%2B%20years-0A66C2?style=flat-square" alt="Experience" />
   <img src="https://img.shields.io/badge/Focus-SRE%20%7C%20Platform%20Engineering-2088FF?style=flat-square" alt="Focus" />
-  <img src="https://img.shields.io/badge/Open%20to-Relocation%20%C2%B7%20Germany%20%2F%20EU-success?style=flat-square" alt="Open to relocation" />
+  <img src="https://img.shields.io/badge/Open%20to-New%20Opportunities%20%C2%B7%20Remote%20%2F%20Relocation-success?style=flat-square" alt="Open to opportunities" />
 </p>
 
 ---
@@ -57,6 +57,7 @@ Results-driven **Senior SRE / Platform Engineer** with **6+ years** designing, a
 **Languages**
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
+![YAML](https://img.shields.io/badge/YAML-CB171E?style=for-the-badge&logo=yaml&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
 ---
@@ -65,12 +66,12 @@ Results-driven **Senior SRE / Platform Engineer** with **6+ years** designing, a
 
 | Project | What it demonstrates |
 |---|---|
-| 🏛️ **[terraform-aws-landing-zone](https://github.com/Muhammad-Imad)** | Multi-account AWS Landing Zone — org / network / identity / log-archive / audit hubs, SCPs, centralized logging |
-| ☸️ **[argocd-gitops-platform](https://github.com/Muhammad-Imad)** | App-of-apps GitOps across multiple K8s clusters & regions (ArgoCD + Helm + Kustomize) |
-| 🔐 **[terraform-aws-cognito-passwordless](https://github.com/Muhammad-Imad)** | Reusable, DRY module — passwordless auth (email magic-link + phone OTP) on Cognito CUSTOM_AUTH + Lambda triggers |
-| 🛡️ **[packer-golden-images-cis](https://github.com/Muhammad-Imad)** | CIS-hardened golden AMIs (Ubuntu / RHEL / Amazon Linux / Windows) with automated builds |
-| 💰 **[aws-cost-optimizer](https://github.com/Muhammad-Imad)** | Python tool — multi-account cost analysis, rightsizing & unused-resource reports |
-| ⚙️ **[azure-devops-iac-pipelines](https://github.com/Muhammad-Imad)** | Azure IaC + YAML build/release pipelines for microservices (App Services, AKS, Key Vault, Front Door) |
+| 🏛️ **[terraform-aws-landing-zone](https://github.com/Muhammad-Imad/terraform-aws-landing-zone)** | Multi-account AWS Landing Zone — org / network / identity / log-archive / audit hubs, SCPs, centralized logging |
+| ☸️ **[argocd-gitops-platform](https://github.com/Muhammad-Imad/argocd-gitops-platform)** | App-of-apps GitOps across multiple K8s clusters & regions (ArgoCD + Helm + Kustomize) |
+| 🔐 **[terraform-aws-cognito-passwordless](https://github.com/Muhammad-Imad/terraform-aws-cognito-passwordless)** | Reusable, DRY module — passwordless auth (email magic-link + phone OTP) on Cognito CUSTOM_AUTH + Lambda triggers |
+| 🛡️ **[packer-golden-images-cis](https://github.com/Muhammad-Imad/packer-golden-images-cis)** | CIS-hardened golden AMIs (Ubuntu / RHEL / Amazon Linux / Windows) with automated builds |
+| 💰 **[aws-cost-optimizer](https://github.com/Muhammad-Imad/aws-cost-optimizer)** | Python tool — multi-account cost analysis, rightsizing & unused-resource reports |
+| ⚙️ **[azure-devops-iac-pipelines](https://github.com/Muhammad-Imad/azure-devops-iac-pipelines)** | Azure IaC + YAML build/release pipelines for microservices (App Services, AKS, Key Vault, Front Door) |
 
 > 📖 Detailed engineering case studies (architecture, decisions, impact) live in each repo's README.
 
@@ -105,4 +106,4 @@ Results-driven **Senior SRE / Platform Engineer** with **6+ years** designing, a
   <a href="mailto:muhammad.imad96885@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
 </p>
 
-<p align="center"><i>📍 Karachi, Pakistan · Open to relocation (Germany / EU) · SRE · Platform Engineering · DevOps</i></p>
+<p align="center"><i>📍 Based in Karachi, Pakistan · Open to Remote / Relocation Worldwide · SRE · Platform Engineering · DevOps</i></p>
