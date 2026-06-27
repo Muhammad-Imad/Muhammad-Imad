@@ -62,6 +62,63 @@ Results-driven **Senior SRE / Platform Engineer** with **6+ years** designing, a
 
 ---
 
+### 🗺️ Platform Architecture — How My Work Fits Together
+
+> Each box is one of my real projects (links in the table below) — rendered live by GitHub on every visit.
+
+```mermaid
+flowchart TB
+    DEV(["👩‍💻 Developers / Git"]):::entry
+
+    subgraph GOV["☁️ Cloud Foundation & Governance"]
+        direction LR
+        LZ["🏛️ AWS Landing Zone<br/><i>multi-account · SCPs · audit</i>"]:::aws
+        AZ["⚙️ Azure IaC + CI/CD<br/><i>App Service · AKS · Front Door</i>"]:::azure
+    end
+
+    subgraph IAC["🧱 Infrastructure as Code"]
+        direction LR
+        TG["🧱 Terragrunt Platform<br/><i>DRY · VPC / EKS / CloudFront</i>"]:::aws
+        PK["🛡️ Golden Images (CIS)<br/><i>Packer · hardened AMIs</i>"]:::sec
+    end
+
+    subgraph PLAT["☸️ Kubernetes & GitOps Platform"]
+        direction LR
+        AR["☸️ ArgoCD GitOps<br/><i>app-of-apps · multi-cluster</i>"]:::k8s
+        HC["⛵ Helm Charts Library<br/><i>reusable · auto-release</i>"]:::k8s
+    end
+
+    subgraph APPSEC["🔐 App Security & 💰 FinOps"]
+        direction LR
+        CG["🔐 Cognito Passwordless<br/><i>CUSTOM_AUTH · Lambda</i>"]:::sec
+        CO["💰 Cost Optimizer<br/><i>rightsizing · waste cleanup</i>"]:::fin
+    end
+
+    DEV --> GOV
+    GOV --> IAC
+    IAC --> PLAT
+    PLAT --> APPSEC
+    CO -. "cost governance" .-> GOV
+
+    click LZ href "https://github.com/Muhammad-Imad/terraform-aws-landing-zone" _blank
+    click AZ href "https://github.com/Muhammad-Imad/azure-devops-iac-pipelines" _blank
+    click TG href "https://github.com/Muhammad-Imad/terragrunt-aws-platform" _blank
+    click PK href "https://github.com/Muhammad-Imad/packer-golden-images-cis" _blank
+    click AR href "https://github.com/Muhammad-Imad/argocd-gitops-platform" _blank
+    click HC href "https://github.com/Muhammad-Imad/helm-charts-library" _blank
+    click CG href "https://github.com/Muhammad-Imad/terraform-aws-cognito-passwordless" _blank
+    click CO href "https://github.com/Muhammad-Imad/aws-cost-optimizer" _blank
+
+    classDef entry fill:#0A66C2,stroke:#fff,stroke-width:1px,color:#fff;
+    classDef aws fill:#232F3E,stroke:#FF9900,stroke-width:1px,color:#fff;
+    classDef azure fill:#0078D4,stroke:#fff,stroke-width:1px,color:#fff;
+    classDef k8s fill:#326CE5,stroke:#fff,stroke-width:1px,color:#fff;
+    classDef sec fill:#7B1FA2,stroke:#fff,stroke-width:1px,color:#fff;
+    classDef fin fill:#2E7D32,stroke:#fff,stroke-width:1px,color:#fff;
+```
+
+---
+
 ### 📌 Featured Projects
 
 | Project | What it demonstrates |
