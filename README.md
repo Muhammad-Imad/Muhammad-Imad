@@ -67,7 +67,9 @@ Results-driven **Senior SRE / Platform Engineer** with **6+ years** designing, a
 | Project | What it demonstrates |
 |---|---|
 | 🏛️ **[terraform-aws-landing-zone](https://github.com/Muhammad-Imad/terraform-aws-landing-zone)** | Multi-account AWS Landing Zone — org / network / identity / log-archive / audit hubs, SCPs, centralized logging |
+| 🧱 **[terragrunt-aws-platform](https://github.com/Muhammad-Imad/terragrunt-aws-platform)** | DRY multi-account AWS platform with Terragrunt — `_envcommon` pattern, dependency-ordered VPC / EKS / S3+CloudFront modules |
 | ☸️ **[argocd-gitops-platform](https://github.com/Muhammad-Imad/argocd-gitops-platform)** | App-of-apps GitOps across multiple K8s clusters & regions (ArgoCD + Helm + Kustomize) |
+| ⛵ **[helm-charts-library](https://github.com/Muhammad-Imad/helm-charts-library)** | Reusable Helm charts — shared library chart + web-service & worker app charts, schema-validated, auto-released |
 | 🔐 **[terraform-aws-cognito-passwordless](https://github.com/Muhammad-Imad/terraform-aws-cognito-passwordless)** | Reusable, DRY module — passwordless auth (email magic-link + phone OTP) on Cognito CUSTOM_AUTH + Lambda triggers |
 | 🛡️ **[packer-golden-images-cis](https://github.com/Muhammad-Imad/packer-golden-images-cis)** | CIS-hardened golden AMIs (Ubuntu / RHEL / Amazon Linux / Windows) with automated builds |
 | 💰 **[aws-cost-optimizer](https://github.com/Muhammad-Imad/aws-cost-optimizer)** | Python tool — multi-account cost analysis, rightsizing & unused-resource reports |
