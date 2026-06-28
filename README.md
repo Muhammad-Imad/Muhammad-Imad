@@ -83,6 +83,12 @@ flowchart TB
         PK["🛡️ Golden Images (CIS)<br/><i>Packer · hardened AMIs</i>"]:::sec
     end
 
+    subgraph DSO["🛡️ DevSecOps Security Gates"]
+        direction LR
+        TFSEC["🛡️ tfsec<br/><i>IaC code scan</i>"]:::sec
+        TRIVY["🛡️ Trivy<br/><i>container image scan</i>"]:::sec
+    end
+
     subgraph PLAT["☸️ Kubernetes & GitOps Platform"]
         direction LR
         AR["☸️ ArgoCD GitOps<br/><i>app-of-apps · multi-cluster</i>"]:::k8s
@@ -98,7 +104,8 @@ flowchart TB
 
     DEV --> GOV
     GOV --> IAC
-    IAC --> PLAT
+    IAC --> DSO
+    DSO --> PLAT
     PLAT --> APPSEC
     CO -. "cost governance" .-> GOV
 
