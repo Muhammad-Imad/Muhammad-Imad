@@ -87,6 +87,7 @@ flowchart TB
         direction LR
         AR["☸️ ArgoCD GitOps<br/><i>app-of-apps · multi-cluster</i>"]:::k8s
         HC["⛵ Helm Charts Library<br/><i>reusable · auto-release</i>"]:::k8s
+        GHA["🔁 Reusable GitHub Actions<br/><i>CI → scan/push → GitOps deploy</i>"]:::cicd
     end
 
     subgraph APPSEC["🔐 App Security & 💰 FinOps"]
@@ -109,6 +110,7 @@ flowchart TB
     click HC href "https://github.com/Muhammad-Imad/helm-charts-library" _blank
     click CG href "https://github.com/Muhammad-Imad/terraform-aws-cognito-passwordless" _blank
     click CO href "https://github.com/Muhammad-Imad/aws-cost-optimizer" _blank
+    click GHA href "https://github.com/Muhammad-Imad/reusable-github-actions" _blank
 
     classDef entry fill:#0A66C2,stroke:#fff,stroke-width:1px,color:#fff;
     classDef aws fill:#232F3E,stroke:#FF9900,stroke-width:1px,color:#fff;
@@ -116,6 +118,7 @@ flowchart TB
     classDef k8s fill:#326CE5,stroke:#fff,stroke-width:1px,color:#fff;
     classDef sec fill:#7B1FA2,stroke:#fff,stroke-width:1px,color:#fff;
     classDef fin fill:#2E7D32,stroke:#fff,stroke-width:1px,color:#fff;
+    classDef cicd fill:#2088FF,stroke:#fff,stroke-width:1px,color:#fff;
 ```
 
 ---
@@ -128,6 +131,7 @@ flowchart TB
 | 🧱 **[terragrunt-aws-platform](https://github.com/Muhammad-Imad/terragrunt-aws-platform)** | DRY multi-account AWS platform with Terragrunt — `_envcommon` pattern, dependency-ordered VPC / EKS / S3+CloudFront modules |
 | ☸️ **[argocd-gitops-platform](https://github.com/Muhammad-Imad/argocd-gitops-platform)** | App-of-apps GitOps across multiple K8s clusters & regions (ArgoCD + Helm + Kustomize) |
 | ⛵ **[helm-charts-library](https://github.com/Muhammad-Imad/helm-charts-library)** | Reusable Helm charts — shared library chart + web-service & worker app charts, schema-validated, auto-released |
+| 🔁 **[reusable-github-actions](https://github.com/Muhammad-Imad/reusable-github-actions)** | Reusable Actions workflows + composite actions — standardized CI → Trivy-gated build/push → GitOps deploy |
 | 🔐 **[terraform-aws-cognito-passwordless](https://github.com/Muhammad-Imad/terraform-aws-cognito-passwordless)** | Reusable, DRY module — passwordless auth (email magic-link + phone OTP) on Cognito CUSTOM_AUTH + Lambda triggers |
 | 🛡️ **[packer-golden-images-cis](https://github.com/Muhammad-Imad/packer-golden-images-cis)** | CIS-hardened golden AMIs (Ubuntu / RHEL / Amazon Linux / Windows) with automated builds |
 | 💰 **[aws-cost-optimizer](https://github.com/Muhammad-Imad/aws-cost-optimizer)** | Python tool — multi-account cost analysis, rightsizing & unused-resource reports |
