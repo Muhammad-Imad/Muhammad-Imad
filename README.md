@@ -137,7 +137,7 @@ flowchart TB
 | 🏛️ **[terraform-aws-landing-zone](https://github.com/Muhammad-Imad/terraform-aws-landing-zone)** | Multi-account AWS Landing Zone — org / network / identity / log-archive / audit hubs, SCPs, centralized logging |
 | 🧱 **[terragrunt-aws-platform](https://github.com/Muhammad-Imad/terragrunt-aws-platform)** | DRY multi-account AWS platform with Terragrunt — `_envcommon` pattern, dependency-ordered VPC / EKS / S3+CloudFront modules |
 | ☸️ **[argocd-gitops-platform](https://github.com/Muhammad-Imad/argocd-gitops-platform)** | App-of-apps GitOps across multiple K8s clusters & regions (ArgoCD + Helm + Kustomize) |
-| ⛵ **[helm-charts-library](https://github.com/Muhammad-Imad/helm-charts-library)** | Reusable Helm charts — shared library chart + web-service & worker app charts, schema-validated, auto-released |
+| ⛵ **[helm-charts-library](https://github.com/Muhammad-Imad/helm-charts-library)** | Reusable Helm charts — shared library chart + web-service & worker app charts, schema-validated, auto-released · 📡 **[Live Helm repo](https://muhammad-imad.github.io/helm-charts-library/)** |
 | 🔁 **[reusable-github-actions](https://github.com/Muhammad-Imad/reusable-github-actions)** | Reusable Actions workflows + composite actions — standardized CI → Trivy-gated build/push → GitOps deploy |
 | 🔐 **[terraform-aws-cognito-passwordless](https://github.com/Muhammad-Imad/terraform-aws-cognito-passwordless)** | Reusable, DRY module — passwordless auth (email magic-link + phone OTP) on Cognito CUSTOM_AUTH + Lambda triggers |
 | 🛡️ **[packer-golden-images-cis](https://github.com/Muhammad-Imad/packer-golden-images-cis)** | CIS-hardened golden AMIs (Ubuntu / RHEL / Amazon Linux / Windows) with automated builds |
