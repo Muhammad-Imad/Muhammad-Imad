@@ -1,9 +1,9 @@
 <h1 align="center">Hi, I'm Muhammad Imad 👋</h1>
-<h3 align="center">Senior SRE / Platform Engineer · Multi-Cloud (AWS · Azure · GCP) · Kubernetes · GitOps</h3>
+<h3 align="center">Senior SRE · Platform & AI Infrastructure Engineer · Multi-Cloud (AWS · Azure · GCP) · Kubernetes · GitOps · LLM Serving</h3>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Experience-6%2B%20years-0A66C2?style=flat-square" alt="Experience" />
-  <img src="https://img.shields.io/badge/Focus-SRE%20%7C%20Platform%20Engineering-2088FF?style=flat-square" alt="Focus" />
+  <img src="https://img.shields.io/badge/Focus-Platform%20%7C%20SRE%20%7C%20AI%20Infrastructure-2088FF?style=flat-square" alt="Focus" />
   <img src="https://img.shields.io/badge/Open%20to-New%20Opportunities%20%C2%B7%20Remote%20%2F%20Relocation-success?style=flat-square" alt="Open to opportunities" />
 </p>
 
@@ -11,13 +11,13 @@
 
 ### 🚀 About Me
 
-Results-driven **Senior SRE / Platform Engineer** with **6+ years** designing, automating, and operating scalable cloud infrastructure across **AWS, Azure, and GCP**. I build self-service platforms on **Kubernetes**, codify everything with **Terraform / Terragrunt**, ship via **GitOps (ArgoCD)** and **CI/CD pipelines**, and bake in **DevSecOps** and **cloud security** from day one.
+Results-driven **Senior SRE / Platform Engineer** with **6+ years** designing, automating, and operating scalable cloud infrastructure across **AWS, Azure, and GCP** — now extending the same platform foundation to **AI/ML infrastructure**. I build self-service platforms on **Kubernetes**, codify everything with **Terraform / Terragrunt**, ship via **GitOps (ArgoCD)** and **CI/CD pipelines**, and bake in **DevSecOps** and **cloud security** from day one.
 
 - 🏗️ Led architectural redesign of **centralized, multi-region hybrid infrastructure** (on-prem + AWS)
+- 🤖 Building **AI/LLM platform infrastructure** — self-hosted LLM serving (vLLM) on **GPU Kubernetes**, GitOps-deployed, KEDA scale-to-zero, Karpenter spot-GPU cost control
 - ☸️ Run **EKS, AKS, GKE, ROSA (OpenShift)** and self-managed (RKE2 / Talos) clusters via GitOps
 - 💰 Drove **cost optimization across 50+ AWS accounts** — rightsizing, unused-resource cleanup, cost governance
 - 🛡️ Implement **DevSecOps** — Trivy, SonarQube, TFSec, Security Hub, GuardDuty, least-privilege IAM
-- 🌍 Architected **multi-region Disaster Recovery** (RTO/RPO-driven, automated failover) during a regional outage
 
 ---
 
@@ -94,6 +94,7 @@ flowchart TB
         AR["☸️ ArgoCD GitOps<br/><i>app-of-apps · multi-cluster</i>"]:::k8s
         HC["⛵ Helm Charts Library<br/><i>reusable · auto-release</i>"]:::k8s
         GHA["🔁 Reusable GitHub Actions<br/><i>CI → scan/push → GitOps deploy</i>"]:::cicd
+        LLM["🤖 LLM Inference Platform<br/><i>vLLM · GPU · scale-to-zero</i>"]:::ai
     end
 
     subgraph APPSEC["🔐 App Security & 💰 FinOps"]
@@ -118,6 +119,7 @@ flowchart TB
     click CG href "https://github.com/Muhammad-Imad/terraform-aws-cognito-passwordless" _blank
     click CO href "https://github.com/Muhammad-Imad/aws-cost-optimizer" _blank
     click GHA href "https://github.com/Muhammad-Imad/reusable-github-actions" _blank
+    click LLM href "https://github.com/Muhammad-Imad/llm-inference-platform-k8s" _blank
 
     classDef entry fill:#0A66C2,stroke:#fff,stroke-width:1px,color:#fff;
     classDef aws fill:#232F3E,stroke:#FF9900,stroke-width:1px,color:#fff;
@@ -126,6 +128,7 @@ flowchart TB
     classDef sec fill:#7B1FA2,stroke:#fff,stroke-width:1px,color:#fff;
     classDef fin fill:#2E7D32,stroke:#fff,stroke-width:1px,color:#fff;
     classDef cicd fill:#2088FF,stroke:#fff,stroke-width:1px,color:#fff;
+    classDef ai fill:#1904DA,stroke:#fff,stroke-width:1px,color:#fff;
 ```
 
 ---
@@ -137,6 +140,7 @@ flowchart TB
 | 🏛️ **[terraform-aws-landing-zone](https://github.com/Muhammad-Imad/terraform-aws-landing-zone)** | Multi-account AWS Landing Zone — org / network / identity / log-archive / audit hubs, SCPs, centralized logging |
 | 🧱 **[terragrunt-aws-platform](https://github.com/Muhammad-Imad/terragrunt-aws-platform)** | DRY multi-account AWS platform with Terragrunt — `_envcommon` pattern, dependency-ordered VPC / EKS / S3+CloudFront modules |
 | ☸️ **[argocd-gitops-platform](https://github.com/Muhammad-Imad/argocd-gitops-platform)** | App-of-apps GitOps across multiple K8s clusters & regions (ArgoCD + Helm + Kustomize) |
+| 🤖 **[llm-inference-platform-k8s](https://github.com/Muhammad-Imad/llm-inference-platform-k8s)** | **AI Platform** — self-hosted LLM serving (vLLM) on GPU Kubernetes: Argo CD GitOps, KEDA scale-to-zero, Karpenter spot-GPU, Prometheus/Grafana |
 | ⛵ **[helm-charts-library](https://github.com/Muhammad-Imad/helm-charts-library)** | Reusable Helm charts — shared library chart + web-service & worker app charts, schema-validated, auto-released · 📡 **[Live Helm repo](https://muhammad-imad.github.io/helm-charts-library/)** |
 | 🔁 **[reusable-github-actions](https://github.com/Muhammad-Imad/reusable-github-actions)** | Reusable Actions workflows + composite actions — standardized CI → Trivy-gated build/push → GitOps deploy |
 | 🔐 **[terraform-aws-cognito-passwordless](https://github.com/Muhammad-Imad/terraform-aws-cognito-passwordless)** | Reusable, DRY module — passwordless auth (email magic-link + phone OTP) on Cognito CUSTOM_AUTH + Lambda triggers |
