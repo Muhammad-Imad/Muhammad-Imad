@@ -23,6 +23,13 @@ Results-driven **Senior SRE / Platform Engineer** with **6+ years** designing, a
 
 ### 🛠️ Tech Stack
 
+**🤖 AI / ML Platform**
+![vLLM](https://img.shields.io/badge/vLLM-1904DA?style=for-the-badge&logoColor=white)
+![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
+![KEDA](https://img.shields.io/badge/KEDA-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+![Karpenter](https://img.shields.io/badge/Karpenter-FF9900?style=for-the-badge&logo=amazonwebservices&logoColor=white)
+![NVIDIA GPU](https://img.shields.io/badge/NVIDIA%20GPU-76B900?style=for-the-badge&logo=nvidia&logoColor=white)
+
 **Cloud**
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=FF9900)
 ![Azure](https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)
