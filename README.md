@@ -100,8 +100,15 @@ flowchart TB
         direction LR
         AR["☸️ ArgoCD GitOps<br/><i>app-of-apps · multi-cluster</i>"]:::k8s
         HC["⛵ Helm Charts Library<br/><i>reusable · auto-release</i>"]:::k8s
-        GHA["🔁 Reusable GitHub Actions<br/><i>CI → scan/push → GitOps deploy</i>"]:::cicd
-        LLM["🤖 LLM Inference Platform<br/><i>vLLM · GPU · scale-to-zero</i>"]:::ai
+        GHA["🔁 Reusable GitHub Actions<br/><i>CI → scan/push → deploy</i>"]:::cicd
+    end
+
+    subgraph AIP["🤖 AI / ML Platform"]
+        direction LR
+        EKSGPU["⚡ GPU EKS Foundation<br/><i>Karpenter · NVIDIA · IRSA</i>"]:::ai
+        LLM["🤖 LLM Inference (vLLM)<br/><i>GPU · scale-to-zero</i>"]:::ai
+        RAG["🧠 GenAI RAG on AWS<br/><i>Bedrock · vector store</i>"]:::ai
+        GW["🚦 LLM Gateway<br/><i>routing · cost tracking</i>"]:::ai
     end
 
     subgraph APPSEC["🔐 App Security & 💰 FinOps"]
@@ -114,7 +121,8 @@ flowchart TB
     GOV --> IAC
     IAC --> DSO
     DSO --> PLAT
-    PLAT --> APPSEC
+    PLAT --> AIP
+    AIP --> APPSEC
     CO -. "cost governance" .-> GOV
 
     click LZ href "https://github.com/Muhammad-Imad/terraform-aws-landing-zone" _blank
@@ -123,10 +131,13 @@ flowchart TB
     click PK href "https://github.com/Muhammad-Imad/packer-golden-images-cis" _blank
     click AR href "https://github.com/Muhammad-Imad/argocd-gitops-platform" _blank
     click HC href "https://github.com/Muhammad-Imad/helm-charts-library" _blank
+    click GHA href "https://github.com/Muhammad-Imad/reusable-github-actions" _blank
+    click EKSGPU href "https://github.com/Muhammad-Imad/terraform-aws-eks-gpu" _blank
+    click LLM href "https://github.com/Muhammad-Imad/llm-inference-platform-k8s" _blank
+    click RAG href "https://github.com/Muhammad-Imad/genai-rag-aws-terraform" _blank
+    click GW href "https://github.com/Muhammad-Imad/llm-gateway-finops" _blank
     click CG href "https://github.com/Muhammad-Imad/terraform-aws-cognito-passwordless" _blank
     click CO href "https://github.com/Muhammad-Imad/aws-cost-optimizer" _blank
-    click GHA href "https://github.com/Muhammad-Imad/reusable-github-actions" _blank
-    click LLM href "https://github.com/Muhammad-Imad/llm-inference-platform-k8s" _blank
 
     classDef entry fill:#0A66C2,stroke:#fff,stroke-width:1px,color:#fff;
     classDef aws fill:#232F3E,stroke:#FF9900,stroke-width:1px,color:#fff;
@@ -148,6 +159,9 @@ flowchart TB
 | 🧱 **[terragrunt-aws-platform](https://github.com/Muhammad-Imad/terragrunt-aws-platform)** | DRY multi-account AWS platform with Terragrunt — `_envcommon` pattern, dependency-ordered VPC / EKS / S3+CloudFront modules |
 | ☸️ **[argocd-gitops-platform](https://github.com/Muhammad-Imad/argocd-gitops-platform)** | App-of-apps GitOps across multiple K8s clusters & regions (ArgoCD + Helm + Kustomize) |
 | 🤖 **[llm-inference-platform-k8s](https://github.com/Muhammad-Imad/llm-inference-platform-k8s)** | **AI Platform** — self-hosted LLM serving (vLLM) on GPU Kubernetes: Argo CD GitOps, KEDA scale-to-zero, Karpenter spot-GPU, Prometheus/Grafana |
+| ⚡ **[terraform-aws-eks-gpu](https://github.com/Muhammad-Imad/terraform-aws-eks-gpu)** | **AI Platform** — GPU-ready EKS foundation: Karpenter spot-GPU provisioning, NVIDIA device plugin, IRSA (Terraform) |
+| 🧠 **[genai-rag-aws-terraform](https://github.com/Muhammad-Imad/genai-rag-aws-terraform)** | **GenAI** — RAG infrastructure on AWS: Bedrock embeddings/generation, OpenSearch vector store, Cognito + WAF API |
+| 🚦 **[llm-gateway-finops](https://github.com/Muhammad-Imad/llm-gateway-finops)** | **LLMOps / FinOps** — central LLM gateway: multi-provider routing, caching, per-team token/cost tracking |
 | ⛵ **[helm-charts-library](https://github.com/Muhammad-Imad/helm-charts-library)** | Reusable Helm charts — shared library chart + web-service & worker app charts, schema-validated, auto-released · 📡 **[Live Helm repo](https://muhammad-imad.github.io/helm-charts-library/)** |
 | 🔁 **[reusable-github-actions](https://github.com/Muhammad-Imad/reusable-github-actions)** | Reusable Actions workflows + composite actions — standardized CI → Trivy-gated build/push → GitOps deploy |
 | 🔐 **[terraform-aws-cognito-passwordless](https://github.com/Muhammad-Imad/terraform-aws-cognito-passwordless)** | Reusable, DRY module — passwordless auth (email magic-link + phone OTP) on Cognito CUSTOM_AUTH + Lambda triggers |
